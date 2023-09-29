@@ -1,0 +1,54 @@
+.cards {
+    opacity: 0;
+    animation: show-cards 2.1s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+/* 从左到右缓慢出现动画 */
+@keyframes show-cards {
+    from {
+        width: 40vw;
+        opacity: 0;
+    }
+
+    99% {
+        z-index: -10;
+    }
+
+    to {
+        z-index: 100;
+        width: 100vw;
+        opacity: 1;
+    }
+}
+
+/* 字母样式，字母边框样式 */
+.aniplex {
+    /*占窗口宽高度的100% */
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+
+    /* 水平垂直居中 */
+    align-items: center;
+    justify-content: center;
+
+    /* 透视效果 */
+    perspective: 450;
+    -webkit-perspective: 450;
+
+    animation: hige-aniplex 2s ease-out forwards;
+    animation-delay: 2.4s;
+}
+
+/* 字母消失动画 */
+@keyframes hige-aniplex {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

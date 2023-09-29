@@ -1,0 +1,95 @@
+.cards .card {
+    /* 过渡效果 */
+    transition: all .3s;
+    overflow: hidden;
+}
+
+.cards:hover .card {
+    /* 鼠标移动上去边框缩小 */
+    border-left-width: 0.2vw;
+    border-right-width: 0.2vw;
+}
+
+.cards .card:hover {
+    flex: 10;
+
+}
+
+.cards .card .more {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    opacity: 0;
+    transition: all .3s;
+    position: relative;
+
+    padding: 3vw;
+}
+
+.cards .card:hover .more {
+    opacity: 1;
+}
+
+
+.card .more .paint {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70vw;
+    background-size: auto 100%;
+}
+
+.card .more .title {
+    width: 20%;
+    border-top: 0.5vw solid #e3bc8c;
+}
+
+.card .more .bar {
+    width: 20vw;
+    height: 2.5vw;
+    background-color: #e3bc8c;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.card .more .bar>.point {
+    height: 100%;
+}
+
+
+.card .more .bar>.text {
+    color: #24333c;
+    margin-left: 1vw;
+    font-size: 1.8vw;
+}
+
+
+.card .more .bar>.yuyin {
+    height: 100%;
+    margin-left: auto;
+}
+
+.card .more .jianjie {
+    margin-top: 2vw;
+    position: absolute;
+}
+
+.card .more .jianjie>p {
+    width: 30vw;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.card .more .jianjie>.point {
+    position: absolute;
+    width: 20px;
+    left: 15px;
+    top: 20px;
+}
